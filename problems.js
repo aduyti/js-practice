@@ -4,7 +4,7 @@ const px = 3.1416;
 
 testBoolean = true;
 
-var testArray = [1, 2, 3, 4, 5];
+var testArray = [-11, 2, -3, 4, 5];
 var names = ["jo", "jon", "jhroni", "joni", "jhoni"]
 const myCar = {
     engine: 1200,
@@ -37,4 +37,17 @@ function bestFriend(names) {
     }
     return bestName;
 }
-console.log(bestFriend(names));
+
+function allPositives(arr) {
+    let positivesArray = [];
+    for (const num of arr) {
+        if (num < 0) {
+            break;
+        }
+        positivesArray.push(num);
+    }
+    return positivesArray;
+}
+
+
+// console.log();
