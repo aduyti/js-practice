@@ -20,19 +20,19 @@ function factorial(n) {
     return n * factorial(--n);
 }
 
-function fibonacciRed(n) {
+function fibonacciNth(n) {
     if (n == 1) {
         return 0;
     }
     if (n == 2) {
         return 1;
     }
-    return fibonacciRed(n - 1) + fibonacciRed(n - 2);
+    return fibonacciNth(n - 1) + fibonacciNth(n - 2);
 }
 
 function fibonacci(n) {
     for (let i = 1; i <= n; i++) {
-        console.log(fibonacciRed(i));
+        console.log(fibonacciNth(i));
     }
 }
 fibonacci(9);
